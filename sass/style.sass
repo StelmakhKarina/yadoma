@@ -8,37 +8,82 @@ body
     padding: auto
     font-family: $main-font-family
 
-header, div
-    display: block
-
-.header-top 
-    height: 62px
-
 .container 
-    width: 100%
     max-width: 955px
     padding: 0 15px
     margin: 0 auto
 
-img.logo
-    width: 56px
-    height: 56px
-    margin: 2px 15px 0 0
-    
+// header
 
-div.logo
+header, div
+    display: block
+
+a 
+    text-decoration: none
+    display: inline-block
+
+.header__top 
+    background-color: white
+
+.header__content-inner 
     display: flex
-    width: 200px
-    height: 62px 
+
+img.logo
+    border-style: none
+    margin: 2px 15px 0 0
 
 .logo-text 
-    width: 105px
+    display: flex
     color: black
     font-size: 25px
     font-style: normal
     font-weight: bold
-    margin: 0 0 0 18px
-    display: flex
-    align-items: center
     text-align: center
     color: #000000
+
+// header
+
+// navigation
+
+nav
+    display: block
+
+.menu ul 
+    display: flex
+    padding: 0
+    margin-top: 23px
+    
+.menu li 
+    list-style: none
+    margin: 0 49px 0 56px 
+
+.menu a 
+    color: #000000
+    font-weight: bold
+    text-decoration: none
+    font-size: 15px
+
+.menu a:hover 
+    text-decoration: underline
+
+.header__contacts 
+    margin-left: 95px
+    
+.header__phone
+    color: #000000
+    font-weight: bold
+    font-size: 14px
+    line-height: 17px
+    margin-top: 7px
+
+.header__phone:before 
+    position: absolute
+    left: 0
+    color: #000000
+
+.header__email
+    color: #66C6B9
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    margin-top: 15px
