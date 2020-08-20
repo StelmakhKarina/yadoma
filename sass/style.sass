@@ -163,51 +163,57 @@ input::-webkit-inner-spin-button
 
 .search_button:hover
     background-color: #8AD6CB
-    border: none
+    outline: none
     cursor: pointer
 
 .search_button:active
     background-color: #229F8E
-    border: none
+    outline: none
+
+.search_button:focus
+    outline: none
 
 //search 
 
-// offers slider
+// offers sliders
 
-.special_offers
-    padding: 55px
+.offers, .blog
+    padding: 55px 55px 0 55px
     width: 100%
 
-.special_offers__title
+.new_offers
+    background-color: rgba(196, 196, 196, 0.35)
+
+.offers__title, .blog__title
     font-size: 40px
     text-align: center
 
-.special_offers__text
+.offers__text, .blog__text
     font-size: 15px
     color: #C4C4C4
     text-align: center
     padding-top: 5px
 
-.special_offers__items
+.offers__items
     display: flex
     justify-content: space-between
     margin: 62px 5px 0 5px
     width: 100%
     position: relative
 
-.special_offers_item
+.offers_item
     width: 100%
     max-width: 225px
     height: 290px
     text-align: center
 
-.special_offers_item a:active, .special_offers_item a:visited
+.offers_item a:active, .offers_item a:visited
     color: black
 
-.special_offers_item:hover
+.offers_item:hover
     box-shadow: 0 0 10px rgba(0,0,0,0.5)
 
-.special_offers_item img
+.offers_item img, .blog_item img
     width: 100%
     height: 164px
 
@@ -215,34 +221,251 @@ input::-webkit-inner-spin-button
     display: flex
     align-items: center
 
-.special_offers_item-title
+.offers_item-title
     font-size: 23px
 
-.special_offers_item-title a 
+.offers_item-title a 
     color: black
     text-decoration: none
 
-.special_offers_item-address
+.offers_item-address
     font-size: 14px
 
-.special_offers_item-size
+.offers_item-size
     font-size: 15px
     color: #B8AFAF
     margin: 10px 0 10px 0
 
-.special_offers_item-price
+.offers_item-price
     font-size: 25px
     font-weight: bold
     line-height: 30px
     color: #66C6B9
 
 .slider_btn
-    border: none
-    background: none
+    position: relative
+    width: 40px
+    height: 40px
+    background-color: #66C6B9
+    border: 3px solid #66C6B9
+    border-radius: 50%
+    box-shadow: 0 0 10px rgba(0,0,0,0.3)
     cursor: pointer
 
-.slider_btn:hover
-    box-shadow: 0 0 10px rgba(0,0,0,0.5)
+.slider_btn:after
+    position: absolute
+    top: 12px
+    left: 13px
+    content: ''
+    display: block
+    width: 7px
+    height: 7px
+    border-left: 3px solid white
+    border-bottom: 3px solid white
+    transform: rotate(45deg)
 
 .slider_btn:active
+    outline: none
+
+.slider_btn:active
+    background-color: #229F8E
+    outline: none
+
+.slider_btn:focus
+    outline: none
+
+.slider_btn_right
+    transform: rotate(180deg)
+
+.offers__bottom, .blog__bottom
+    display: flex
+    justify-content: center
+
+.more_button 
+    max-width: 306px
+    width: 100%
+    height: 37px
+    background-color: #66C6B9
+    color: white
     border: none
+    font-weight: bold
+    font-size: 15px
+    margin: 46px
+    display: flex
+    justify-content: center
+    align-items: center
+
+.more_button:hover
+    background-color: #8AD6CB
+    outline: none
+    cursor: pointer
+
+.more_button:active
+    background-color: #229F8E
+    outline: none
+
+.more_button:focus
+    outline: none
+
+// offers sliders
+
+// blog
+
+.blog__items
+    display: flex
+    justify-content: space-evenly
+    margin: 62px 0 0 0
+    width: 100%
+    position: relative
+
+.blog_item 
+    width: 100%
+    max-width: 225px
+    text-align: center
+
+.blog_item a
+    font-weight: bold
+    font-size: 15px
+    line-height: 18px
+    text-align: center
+
+.blog_item a,
+.blog_item a:link,
+.blog_item a:visited 
+    color: black
+    text-decoration: none
+
+.blog_item a:hover 
+    text-decoration: underline
+
+.blog_item-title 
+    margin-top: 19px
+
+.topics_button 
+    max-width: 306px
+    width: 100%
+    height: 37px
+    background-color: white
+    color: black
+    border: 1px solid black
+    font-weight: bold
+    font-size: 15px
+    margin: 46px
+    display: flex
+    justify-content: center
+    align-items: center
+
+.topics_button:hover
+    background-color: #8AD6CB
+    outline: none
+    cursor: pointer   
+
+// blog
+
+// subscribing 
+
+.subscribe 
+    width: 100%
+    height: 53px
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: #E5E5E5
+    margin-bottom: 45px
+
+.email
+    font-weight: bold
+    font-size: 13px
+    line-height: 16px
+    margin-right: 17px
+
+#email
+    min-width: 340px
+    height: 29px
+    border: 1px solid #b8afaf
+    background-color: white
+
+.subscribe_button
+    width: 214px
+    height: 29px
+    background-color: #66C6B9
+    color: white
+    border: none
+    font-size: 13px
+    line-height: 16px
+    margin-left: 13px
+
+.subscribe_button:hover
+    cursor: pointer 
+    text-decoration: underline
+
+.subscribe_button:hover
+.subscribe_button:active
+.subscribe_button:focus
+    outline: none
+// subscribing 
+
+//footer
+
+footer 
+    width: 100%
+    height: 450px
+    background-color: #1D203B
+
+.footer-text
+    font-size: 13px
+    line-height: 19px
+    color: white
+    font-weight: lighter
+    padding-top: 50px
+
+.footer__lists
+    display: flex
+    width: 100%
+    justify-content: space-between
+    margin-top: 20px
+
+.footer_list a
+    color: white
+    font-weight: lighter
+    font-size: 13px
+    line-height: 22px
+    
+.footer_list a:hover 
+    text-decoration: underline
+
+.footer_list ul 
+    list-style: none
+
+a.footer_list-title
+    font-weight: bold
+
+.socialmedia img
+    width: 40px
+    height: 40px
+    margin-top: 5px
+
+.footer_bottom
+    display: flex
+    justify-content: space-between
+
+.footer_bottom-info, .footer_bottom-error
+    max-width: 500px
+
+.politics, .politics a, .error, .error-message a, .copy, .copy a, .info
+    font-size: 13px
+    line-height: 16px
+    font-weight: lighter
+    color: white
+
+.politics a:hover, .error-message a:hover, .copy a:hover 
+    text-decoration: underline
+
+.footer_bottom
+    margin-top: 30px
+
+.copy
+    margin-top: 30px
+
+
+//footer

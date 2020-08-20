@@ -40,6 +40,7 @@
                 <div class="moscow">в Москве и Подмосковье</div>
                 </div>
                 <div class="search_buttons">
+                    <form action="#" method="post" class="search_form">
                     <select class="action__list" name="action__list" id="action__list">
                         <option value="Купить">Купить</option>
                         <option value="Продать">Продать</option>
@@ -55,78 +56,278 @@
                     </select>
                     <input class="search_price" type="number" placeholder="Цена до" maxlength="12">
                     <input class="district_searching" type="search" placeholder="Район, метро" maxlength="50">
-                    <input class="search_button" type="button" value="Найти">
+                    <input class="search_button" type="submit" value="Найти">
+                    </form>
                 </div>
             </div>
         </div>
     </section>
     <!-- /.search -->
-    <section class="special_offers">
+    <section class="offers">
         <div class="container">
-            <div class="special_offers__top">
-                <div class="special_offers__title">
+            <div class="offers__top">
+                <div class="offers__title">
                     Специальные предложения
                 </div>
-                <div class="special_offers__text">
+                <div class="offers__text">
                     Лучшие предложения на нашем сайте.
                 </div>
             </div>
-            <div class="special_offers__items">
+            <div class="offers__items">
                 <div class="slider_button">
-                    <button type="button" class="slider_btn"><img src="img/next button.svg" alt=""></button>
+                    <button type="button" class="slider_btn"></button>
                 </div>
-                <div class="special_offers_item">
+                <div class="offers_item">
                     <a href="#"><img src="img/special-apartment-2.jpg" alt="Квартира 2-комн">
-                    <div class="special_offers_item-title">
-                    Квартира, 2 комн.
-                    </div>
-                    <div class="special_offers_item-address">
-                        Донская, д. 4
-                    </div>
-                    <div class="special_offers_item-size">
-                        60 м², 7 эт.
-                    </div>
-                    <div class="special_offers_item-price">
-                        17 000 000 ₽
-                    </div></a> 
+                        <div class="offers_item-title">
+                            Квартира, 2 комн.
+                        </div>
+                        <div class="offers_item-address">
+                            Донская, д. 4
+                        </div>
+                        <div class="offers_item-size">
+                            60 м², 7 эт.
+                        </div>
+                        <div class="offers_item-price">
+                            17 000 000 ₽
+                        </div>
+                    </a>
                 </div>
-                <div class="special_offers_item">
+                <div class="offers_item">
                     <a href="#"><img src="img/special-office-3 (2).jpg" alt="Аренда офиса">
-                    <div class="special_offers_item-title">
-                    Аренда офиса
-                    </div>
-                    <div class="special_offers_item-address">
-                        Смоленская, д. 27 к. 3
-                    </div>
-                    <div class="special_offers_item-size">
-                        155 м², 3 эт.
-                    </div>
-                    <div class="special_offers_item-price">
-                        255 000 ₽
-                    </div></a>
+                        <div class="offers_item-title">
+                            Аренда офиса
+                        </div>
+                        <div class="offers_item-address">
+                            Смоленская, д. 27 к. 3
+                        </div>
+                        <div class="offers_item-size">
+                            155 м², 3 эт.
+                        </div>
+                        <div class="offers_item-price">
+                            255 000 ₽
+                        </div>
+                    </a>
                 </div>
-                <div class="special_offers_item">
+                <div class="offers_item">
                     <a href="#"><img src="img/special-office-4.jpg" alt="Аренда офиса">
-                    <div class="special_offers_item-title">
-                    Аренда офиса
-                    </div>
-                    <div class="special_offers_item-address">
-                        Котляковский переулок, д. 5
-                    </div>
-                    <div class="special_offers_item-size">
-                        45 м², 5 эт.
-                    </div>
-                    <div class="special_offers_item-price">
-                        55 000 ₽
-                    </div></a>
+                        <div class="offers_item-title">
+                            Аренда офиса
+                        </div>
+                        <div class="offers_item-address">
+                            Котляковский переулок, д. 5
+                        </div>
+                        <div class="offers_item-size">
+                            45 м², 5 эт.
+                        </div>
+                        <div class="offers_item-price">
+                            55 000 ₽
+                        </div>
+                    </a>
                 </div>
                 <div class="slider_button">
-                    <button type="button" class="slider_btn"><img src="img/next button 2.svg" alt=""></button>
-                    </div>
+                    <button type="button" class="slider_btn slider_btn_right"></button>
                 </div>
             </div>
+            <div class="offers__bottom">
+                <a href="#" class="more_button">Показать ещё</a>
+            </div>
+        </div>
         </div>
     </section>
     <!-- /.special_offers -->
+    <section class="offers new_offers">
+        <div class="container">
+            <div class="offers__top">
+                <div class="offers__title">
+                    Новые предложения
+                </div>
+                <div class="offers__text">
+                    Последние добавленные предложения.
+                </div>
+            </div>
+            <div class="offers__items">
+                <div class="slider_button">
+                    <button type="button" class="slider_btn"></button>
+                </div>
+                <div class="offers_item">
+                    <a href="#"><img src="img/new-apartment-2 (2).jpg" alt="Квартира 2-комн">
+                        <div class="offers_item-title">
+                            Квартира, 2 комн.
+                        </div>
+                        <div class="offers_item-address">
+                            Херсонская, д. 29
+                        </div>
+                        <div class="offers_item-size">
+                            60 м², 4 эт.
+                        </div>
+                        <div class="offers_item-price">
+                            75 000 ₽
+                        </div>
+                    </a>
+                </div>
+                <div class="offers_item">
+                    <a href="#"><img src="img/new-apartment-3 (2).jpg" alt="Студия">
+                        <div class="offers_item-title">
+                            Студия
+                        </div>
+                        <div class="offers_item-address">
+                            Шипиловская, д. 15
+                        </div>
+                        <div class="offers_item-size">
+                            40 м², 12 эт.
+                        </div>
+                        <div class="offers_item-price">
+                            45 000 ₽
+                        </div>
+                    </a>
+                </div>
+                <div class="offers_item">
+                    <a href="#"><img src="img/new-office-4.jpg" alt="Аренда офиса">
+                        <div class="offers_item-title">
+                            Аренда офиса
+                        </div>
+                        <div class="offers_item-address">
+                            Коломенская, д. 19
+                        </div>
+                        <div class="offers_item-size">
+                            145 м², 1 эт.
+                        </div>
+                        <div class="offers_item-price">
+                            250 000 ₽
+                        </div>
+                    </a>
+                </div>
+                <div class="slider_button">
+                    <button type="button" class="slider_btn slider_btn_right"></button>
+                </div>
+            </div>
+            <div class="offers__bottom">
+                <a href="#" class="more_button">Показать ещё</a>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- /.new_offers -->
+    <section class="blog">
+        <div class="container">
+            <div class="blog__top">
+                <div class="blog__title">
+                    Наш блог
+                </div>
+                <div class="blog__text">
+                    Всё, что нужно знать, чтобы чувствовать себя уверенно на рынке недвижимости.
+                </div>
+            </div>
+            <div class="blog__items">
+                <div class="blog_item">
+                    <a href="#"><img src="img/new-apartment-2 (2).jpg" alt="Квартира 2-комн">
+                        <div class="blog_item-title">
+                            Жилье в Новой Москве: где купить квартиру не дороже 5 млн рублей
+                        </div>
+                    </a>
+                </div>
+                <div class="blog_item">
+                    <a href="#"><img src="img/new-apartment-3 (2).jpg" alt="Студия">
+                        <div class="blog_item-title">
+                            Перепланировка в новостройках:
+                            что можно и нельзя
+                        </div>
+                    </a>
+                </div>
+                <div class="blog_item">
+                    <a href="#"><img src="img/new-office-4.jpg" alt="Аренда офиса">
+                        <div class="blog_item-title">
+                            Где купить самое доступное жилье в СЗАО
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="blog__bottom">
+                <a href="#" class="topics_button">Все статьи</a>
+            </div>
+            <div class="subscribe">
+                <span class="email">E-mail:</span>
+                <form action="post">
+                    <input type="email" name="email" id="email" placeholder="ivanov@mail.ru">
+                    <input class="subscribe_button" type="submit" value="Подписаться на новости">
+                </form>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- /.blog -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content-inner">
+                <div class="footer-text">
+                    <b>Я дома!</b> - портал, собравший в себя всю информацию о недвижимости в Москве и Московской области.
+                    Мы существуем с 2008 года и по праву считаемся лидером в российском сегменте интернет-недвижимости.
+                    Наш портал полезен как обычным посетителям, так и профессионалам рынка – риэлторам, застройщикам.
+                </div>
+                <div class="footer__lists">
+                    <div class="footer_list">
+                        <ul>
+                            <li><a class="footer_list-title" href="#">Аренда</a></li>
+                            <li><a href="#">Квартиры</a></li>
+                            <li><a href="#">Студии</a></li>
+                            <li><a href="#">Комнаты</a></li>
+                            <li><a href="#">Коттеджи</a></li>
+                            <li><a href="#">Дома</a></li>
+                            <li><a href="#">Офисы</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_list">
+                        <ul>
+                            <li><a class="footer_list-title" href="#">Новостройки</a></li>
+                            <li><a href="#">Студии</a></li>
+                            <li><a href="#">Однокомнатные</a></li>
+                            <li><a href="#">Двухкомнатные</a></li>
+                            <li><a href="#">Трехкомнатные</a></li>
+                            <li><a href="#">Четырехкомнатные</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_list">
+                        <ul>
+                            <li><a class="footer_list-title" href="#">Вторички</a></li>
+                            <li><a href="#">Студии</a></li>
+                            <li><a href="#">Однокомнатные</a></li>
+                            <li><a href="#">Двухкомнатные</a></li>
+                            <li><a href="#">Трехкомнатные</a></li>
+                            <li><a href="#">Четырехкомнатные</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_list">
+                        <ul>
+                            <li><a class="footer_list-title" href="#">О компании</a></li>
+                            <li><a href="#">Сотрудничество</a></li>
+                            <li><a href="#">Вакансии</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li class="socialmedia">
+                                <a href="#"><img src="img/facebook.png" alt="facebook"></a>
+                                <a href="#"><img src="img/instagram.png" alt="instagram"></a>
+                                <a href="#"><img src="img/telegram.png" alt="telegram"></a>
+                                <a href="#"><img src="img/vkontakte.png" alt="vkontakte"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_bottom">
+                    <div class="footer_bottom-info">
+                     <div class="politics"><a href="#">Политика конфиденциальности.</a></div>
+                     <div class="info">Номер свидетельства о регистрации СМИ ЭЛ № ФС 11-47863.</div>
+                    </div>
+                    <div class="footer_bottom-error">
+                    <div class="error">Нашли ошибку?</div>
+                    <div class="error-message"><a href="#">Напишите нам</a></div>
+                    </div>
+                </div>
+                <div class="copy">
+                    © 2008–2020 <a href="#">www.yadoma.ru</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /.footer -->
 </body>
 </html>
