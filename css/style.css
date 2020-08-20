@@ -385,7 +385,9 @@ footer {
   font-size: 13px;
   line-height: 19px;
   color: white;
-  font-weight: lighter;
+  font-weight: lighter; }
+
+.footer-text {
   padding-top: 50px; }
 
 .footer-text a:hover {
